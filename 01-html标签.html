@@ -1,0 +1,73 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head><!--头部的起始位置-->
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>凌薇战队</title>
+	</head>
+<body  style="height:3000px;">
+	<a href="#hh">标题位置</a> | <a href="#ff">font位置</a> | <a href="#pp">p标签位置</a> | <a href="#re">pre标签位置</a> |<a href="#ee">em标签位置</a>
+	<br /><br />
+	我是完美的辅助
+	<h1><a name="hh">我是大标题</a></h1>
+	<h2>我是二标题</h2>
+	<h3>我是三标题</h3>
+	<h4>我是四标题</h4>
+	<h5>我是五标题</h5>
+	<h6>我是六标题</h6>
+	<!--
+		1: 大标题在一个页面中只允许出现一次
+		2: 除了大标题,其他的标题都可以在一个页面中多次出现
+		3: 数字越小,他的权重越高
+	-->
+	<font color="red" size="7" ><a name="ff">好大一只傻袍子!</a></font>
+	我是完美的辅助
+	我是完美的辅助
+	<p style="border:1px solid red;"><a name="pp">我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签我是一个p标签</a></p>我是完美的辅助4
+
+	<!--
+		p标签单独占据一行,段落标签
+	-->
+
+	<pre><a name="re">
+		Set 
+		conn = Server.CreateObject("ADODB.Connection")
+		conn.open "DRIVER={Microsoft 
+		Access Driver (*.mdb)}; DBQ=" & Server.MapPath("mb.mdb")
+		set 
+		rs=server.CreateObject("adodb.recordset")
+		rs.open "select*from 
+		img",conn,1,2
+		rs.addnew
+		rs("name")=filename
+		rs.update
+		set 
+		rs=nothing
+		conn.close
+		set 
+		conn=nothing
+		</a>
+	</pre>
+	
+	<p  style="font-size:20px;"><a name="ee">我是em标签</a>
+		至刚又至柔，<em>激进</em>又<i>古板</i>，憨厚又灵活，强悍又细腻，就这样奇妙地结合在<strong>湖南女人</strong>的身上。在湖湘性格方面，<b>湖南男人</b>也有许多缺陷，<span>而且这些缺陷</span>、弱点又往往是与其<span style="color:red;">优点</span>联系在一起的。
+	</p>
+
+	2H<sub>2</sub> + O<sub>2</sub> = 2H<sub>2</sub>O 
+	<br /><br />
+	2<sup>2</sup> + 3<sup>2</sup> = 13
+	<p>原价:<del>998</del> 惊爆价:<ins style="color:red;">9.98</ins></p>
+
+	<p><a href="http://www.baidu.com" target="_blank">超链接</a></p>
+
+	<!--
+		1: 要有点击的位置 href里面添加#
+		2: 跳转的位置,name命名
+	-->
+
+	<a href="mailto:tz.jc@qq.com">基础班作业邮箱</a>
+</body>
+</html>
