@@ -1,0 +1,30 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>02-img图片路径-凌薇战队</title>
+	</head>
+<body>
+	<h1>img图片绝对路径</h1>
+	<img src="C:\Users\Administrator\Desktop\02-第二章图片+列表\课件+源码\img/2.jpg" width="" height="" alt="" title="" />
+
+	<h2>从域名出发的路径</h2>
+	<img src="https://b-ssl.duitang.com/uploads/item/201607/28/20160728145946_zjhHL.jpeg" width="" height="" alt="" title="" />
+
+	<h2>相对路径</h2>
+	<img src="img/4.png" width="200" height="" alt="" title="" />
+	<!--
+		1: 绝对路径 本地的图片 发给别人可能不能打开
+		2: 从域名出发 联网才可以获取
+		3: 相对路径 本地的图片 发给别人一定可以打开
+	-->
+	<h3>返回上一级目录</h3>
+	<img src="../2.jpg" title="闭嘴" />
+	<h3>当前页面</h3>
+	<img src="./5.png" title="huahua" />
+</body>
+</html>

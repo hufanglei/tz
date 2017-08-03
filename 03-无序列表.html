@@ -1,0 +1,84 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>03-无序列表-凌薇战队</title>
+		<style>
+			ul li{
+				font-size:10px;
+				color:red;
+			}
+			span{
+				margin-left:-10px;
+			}
+		</style>
+	</head>
+<body>
+	<h3>无序列表</h3>
+	<!--
+		type 是指类型
+		type="disc"    实心圆
+        type="circle"   空心圆                           
+        type="square"    方块符
+	-->
+	<ul type="square">
+		<li>兔斯基</li>
+		<li>mk雪月
+			<ul>
+				<li>兔斯基</li>
+				<li>mk雪月</li>
+				<li>加州吃龙虾
+					<a href="#">点我试试!</a>
+				</li>
+			</ul>
+		</li>
+		<li>加州吃龙虾
+			<a href="#">点我试试!</a>
+		</li>
+		<li><span>白煤球</span></li>
+	</ul>
+
+	<h3>有序列表</h3>
+	<ol type="A">
+		<li>蜗牛</li>
+		<li>锅包肉</li>
+		<li>拾肆
+			<ol type="i">
+				<li>蜗牛</li>
+				<li>锅包肉</li>
+				<li>拾肆</li>
+				<li>长门</li>
+				<li>蜗牛</li>
+				<li>锅包肉</li>
+				<li>拾肆</li>
+				<li>长门</li>
+				<li>蜗牛</li>
+				<li>锅包肉</li>
+				<li>拾肆</li>
+				<li>长门</li>
+			</ol>
+		</li>
+		<li>长门
+			<ol type="a">
+				<li>蜗牛</li>
+				<li>锅包肉</li>
+				<li>拾肆</li>
+				<li>长门</li>
+			</ol>
+		</li>
+	</ol>
+
+	<h3>定义列表</h3>
+	<dl>
+		<dt>计算机1</dt>
+		<dd>可以计算的机器</dd>
+		<dd>有显示屏</dd>
+		<dd>还有主机</dd>
+		<dd>以视觉方式显示信息的装置</dd>
+	</dl>
+</body>
+</html>
