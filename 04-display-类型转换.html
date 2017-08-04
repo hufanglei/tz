@@ -1,0 +1,58 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>04-display-类型转换-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			span{
+				border:1px solid red;
+				display:block;/*转换成块级元素*/
+				margin:20px 30px;
+				padding:40px 60px;
+			}
+			div{
+				width:200px;
+				height:200px;
+				border:2px solid red;
+				display:inline;/*转换成行级元素*/
+			}
+		/* 	p{
+				border:1px solid red;
+				height:40px;
+				margin:50px 0px;
+				padding:60px 40px;
+				display:inline-block;
+			} */
+			h1,h3{
+				background:#000;
+				color:#fff;
+				display:inline-block;		
+				padding:5px 25px;
+				border-radius:15px;
+				margin:5px 0px;
+			}
+		</style>
+	</head>
+<body>
+	我是辅助!
+	<span>我是转换之后的块级元素span</span>
+	我是辅助!
+	<div>转换后的行级元素div</div>
+	我是辅助!
+	<p>行内块级元素1</p>
+	<p>行内块级元素2</p>
+	<p>行内块级元素3</p>
+	我是辅助!
+	<h1><p>你的青春虽败由荣</p></h1>
+	<h3><p>第一章:生擒白天不懂黑夜</p></h3>
+	<h3><p>第二章:大战长坂坡</p></h3>
+	<h3><p>第三章:大力士奇迹消失</p></h3>
+	<h3><p>第四章:三打白骨精</p></h3>
+	<h3><p>第五章:剧终</p></h3>
+</body>
+</html>
