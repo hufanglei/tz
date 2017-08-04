@@ -1,0 +1,115 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>作业</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,h1,h2,h3,h4,h5,h6,p{margin:0;}
+			ol,ul,li{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			a{text-decoration:none;}
+			body{
+				background:#eee;
+			}
+			ul{				
+				width:760px;
+				height:140px; 
+				margin:20px auto;
+			}
+			ul li{
+				float:left; 				
+			}
+			ul li{
+				background:#fff;
+				width:150px;
+				height: 150px;
+				margin-right:2px;  
+			}
+			ul li.last{
+				margin-right:0; 
+			}
+			.title{
+				display:inline-block; 
+				padding-top:10px;
+				margin-left:10px; 
+				color:#000; 
+				font-size: 14px;
+			}
+			.tip{
+				margin-left:10px; 
+				font-size: 12px;
+				color:green; 
+			}
+			img{
+				width:100px;
+				height: 100px; 
+				float:right; 
+			}
+			.small-font{
+			    font-size:12px;
+			    transform: scale(0.80);
+			    transform-origin:0 0;
+			    -ms-transform: scale(0.80);         /* IE 9 */
+			    -ms-transform-origin:0 0;       /* IE 9 */
+			    -webkit-transform: scale(0.80); /* Safari 和 Chrome */
+			    -webkit-transform-origin:0 0;   /* Safari 和 Chrome */
+			    -moz-transform: scale(0.80);        /* Firefox */
+			    -moz-transform-origin:0 0;      /* Firefox */
+			    -o-transform: scale(0.80);      /* Opera */
+			    -o-transform-origin:0 0;        /* Opera */
+			}
+		</style>
+	</head>
+<body>
+	<!-- 
+		处理的问题
+		1. ul li 一行 :使用float:left 解决
+		2. a标签的margin-top 失效 ，因为外边距合并原因和行内标签的原因，
+		   ①将其转换元素类型为block或inline-block ，
+		   ②在a上使用padding-top；
+		3. tip字体最小为12px;
+			①可以通过tarnsform:scale(0.9);transform-origin: 0 0;
+    			transform: scale(0.5); 把字体再进行变小,缺点 左便不对齐
+			②和①原理相同 ，自定义个small-font ,在需要的地方使用即可
+
+
+
+	 -->
+	<ul>
+		<li>
+			<a href="#" title="抱抱果新首发" class="title">抱抱果新首发</a>
+			<div class="small-font tip">抱一下就幸福</div>
+			<img src="images/bbg.jpg" alt="">
+		</li>
+		<li>
+			<a href="#" title="天猫冰冰冰箱节" class="title">天猫冰冰冰箱节</a>
+			<div class="small-font tip">智由旋风</div>
+			<img src="images/fridge.jpg" alt="">
+		</li>
+		<li>
+			<a href="#" title="西门子全球精选" class="title">西门子全球精选</a>
+			<div class="small-font tip">旗舰新品享你所想</div>
+			<img src="images/siemens.jpg" alt="">
+		</li>
+		<li>
+			<a href="#" title="进口葡萄专场" class="title">进口葡萄专场</a>
+			<div class="small-font tip">原瓶进口品质保证</div>
+			<img src="images/bori.jpg" alt="">
+		</li>
+		<li class="last">
+			<a href="#" title="手机专场" class="title">抱抱果新首发</a>
+			<div class="small-font tip">天天搞机</div>
+			<img src="images/phone.jpg" alt="">
+		</li>
+		
+	</ul>
+</body>
+</html>
