@@ -1,0 +1,94 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>02-选择器高级一-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+			ol,ul,li{
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			a{text-decoration:none;}
+			img{border:none;}
+			/*
+				多元素选择器(群组选择器)
+				注意: 中间用逗号隔开,最后一个不用
+			*/
+			.box1,.txt,a{
+				font-size:40px;
+				color:red;
+			}
+			/* p{
+				font-size:40px;
+				color:red;
+			}
+			a{
+				font-size:40px;
+				color:red;
+			} */
+			
+			/*
+				后代选择器
+				注意:中间用空格分开,表示后代
+			*/
+			.txt2 span{
+				font-size:30px;
+				color:green;
+			}
+			.list1{
+				border:1px solid red;
+			}
+			/*
+				子元素选择器
+				注意: 中间用大于号连接,作用到直接的子集
+			*/
+			.list1 > li{
+				border-bottom:3px solid green;
+			}
+
+			.txt3-2 + p{
+				font-size:40px;
+				color:red;
+			} 
+
+		</style>
+	</head>
+<body>
+	<div class="box1">box</div>
+	<p class="txt">txt</p>
+	<a href="#">点我试试</a>
+
+	<p class="txt2">
+		最美湘妹子 
+		<span>最美的妹子1</span>
+	</p>
+	<span>最美的妹子2</span>
+
+	<ul class="list1">
+		<li>君临天下
+			<ul class="L_list2">
+				<li>但愿人长久1</li>
+				<li>锅包肉2</li>
+				<li>兔斯基3</li>
+			</ul>
+		</li>
+		<li>但愿人长久</li>
+		<li>锅包肉</li>
+		<li>兔斯基</li>
+	</ul>
+
+	<div class="box3">
+		<p class="txt3-1">p1</p>
+		<p class="txt3-2">p2</p>
+		<p>p3</p>
+		<p>p4</p>
+	</div>
+</body>
+</html>

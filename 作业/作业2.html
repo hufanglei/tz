@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+
+		.wrap{
+			height: 240px;	
+			width: 300px;
+			border:1px solid #eee;
+			margin:20px auto;
+		}
+		
+		.wrap .title, .wrap .list li{
+			height: 39px;
+			width: 290px;
+			border-bottom:1px solid #fff;
+			line-height:40px; 
+			padding-left:10px; 
+		}
+		.font18{
+			font-size: 18px;
+		}
+		.wrap .title a{
+			display:inline-block;
+			height:40px;
+			width:40px; 
+			background:url("images/demo2/bg.png") no-repeat -164px -416px;
+			vertical-align: bottom;
+		}
+		.wrap .list li {
+			background-color:#eaeaea; 
+		}	
+		.wrap .list li a{
+			color:#000; 
+		}	
+		.wrap .list li:hover {
+			background-color:#ec9999; 			
+		}
+		.wrap .list li:hover  a{
+			color:#fff;
+		}		
+		
+	</style>
+	
+</head>
+<!-- 注意点 	
+	
+-->
+<body>
+	<div class="wrap">
+		<div class="title">
+			<a href=""></a>
+			<span class="font18">美图赏析</span>
+		</div>
+		<ul class="list">
+			<li><a href="">美女人像</a></li>
+			<li><a href="">风光人文</a></li>
+			<li><a href="">动物微距</a></li>
+			<li><a href="">鸟类摄影</a></li>
+			<li><a href="">综合婚纱</a></li>
+		</ul>
+	</div>
+</body>
+</html>

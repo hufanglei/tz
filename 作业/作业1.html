@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+		.box{
+			height: 220px;	
+			width: 40px;
+			margin:20px 100px; 
+		}
+		.box .li a{
+			display:inline-block;
+			height: 100%;
+			width:100%; 
+		}
+		.box .li{
+			height: 40px;
+			width: 40px;
+		    background:url("images/demo1/bg.png")  no-repeat -80px -278px;	
+			margin-bottom:5px; 
+			cursor: pointer;
+		}
+		.box .li.first:hover{ 
+ 			background-position:-120px -280px;
+		}
+		.box .li.second{
+			background-position: -0px -200px;	
+		}
+		.box .li.second:hover{
+			background-position: -40px -200px
+		}
+		.box .li.three{
+			background-position: -0px -240px;
+		}
+		.box .li.three:hover{
+			background-position: -40px -240px;
+		}
+		.box .li.four{
+			background-position: -0px -320px;
+		}
+		.box .li.four:hover{
+			background-position: -40px -320px;	
+		}
+		.box .li.five{
+			background-position: 0 0;
+			margin-bottom:0;
+		}
+		.box .li.five:hover{
+			background-position: -40px 0;	
+		}
+	</style>
+	
+</head>
+<!-- 注意点 	
+	1.主要就是 联系背景位置 ，从一张大图上怎么取，可以用qq切换看出大概位置，填写上，在浏览器上慢慢调试就可	
+	2.注意 a标签的处理，该例子我是 吧图片放在了li标签上 a变成inline-block 铺满li
+
+-->
+<body>
+	<ul class="box">
+		<li class="li first"><a href="http://www.baidu.com/"></a></li>
+		<li class="li second"><a href="https://y.qq.com/"></a></li>
+		<li class="li three"><a href="https://www.vip.com/"></a></li>
+		<li class="li four"><a href="https://wx.qq.com/"></a></li> 
+		<li class="li five"><a href="#"></a></li>
+	</ul>
+</body>
+</html>

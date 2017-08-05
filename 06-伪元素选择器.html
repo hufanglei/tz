@@ -1,0 +1,47 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>06-伪元素选择器-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+			ol,ul,li{
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			a{text-decoration:none;}
+			img{border:none;}
+
+			
+			.box1{
+				width:300px;
+				height:100px;
+				margin:100px auto;
+				border:1px solid red;
+				font-size:20px;
+			}
+			/*
+				:before   在什么之前
+			*/
+			.box1:before{
+				content:"被迫添加进来的";
+			}
+			/*
+				:after    在什么之后
+			*/
+			.box1:after{
+				content:"在后面";
+			}
+
+		</style>
+	</head>
+<body>
+	<div class="box1">1内容2</div>
+</body>
+</html>
