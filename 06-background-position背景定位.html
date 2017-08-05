@@ -1,0 +1,43 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>06-background-position背景定位-凌薇战队</title>
+		<style type="text/css">
+			body{
+				background-image:url("img/6.gif");
+				background-repeat:no-repeat;
+				/*背景定位*/
+				background-position:top left;/*垂直方向 水平方向  左上方*/
+				background-position:top center;/*顶部的中间 */
+				background-position:center;
+				background-position:bottom left;
+				/*背景关联*/
+				background-attachment:fixed;
+				background-position:100px 200px;/*水平方向 垂直方向*/
+				background-position:40% 50%;
+
+				/*背景定位的三种方式
+				1.关键字
+				   如:background-position:top left;/*垂直方向 水平方向
+				   注意必须和background-attachment:fixed;配合使用
+				2.百分数
+				  如	background-position:100px 200px;/*水平方向 垂直方向
+				  切记 :参数值的意思 顺序和关键字正好相反
+				  注意必须和background-attachment:fixed;配合使用	
+                3.实际像素
+				 	background-position:100px 200px;/*水平方向 垂直方向
+				   切记	 方向，这个不用关联background-attachment:fixed;
+				*/
+
+			}
+		</style>
+	</head>
+<body>
+
+</body>
+</html>

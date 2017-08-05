@@ -1,0 +1,48 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>04-背景样式background-凌薇战队</title>
+		<style type="text/css">
+			#box1{
+				width:300px;
+				height:300px;
+				border:1px solid red;
+				/*background-color 背景颜色  十六进制的写法 英文单词 rgba三原色*/
+				background-color:#00cccc;
+				background-color:red;
+				/*r red   g  green    b blue    alph*/
+				background-color:rgba(0,0,0,0.5);
+			}
+			.box2{
+				width:800px;
+				height:800px;
+				border:2px solid red;
+				/*background-image  背景图片 图片的地址 不使用的图片*/
+				background-image:none;
+				background-image:url("img/1.jpg");
+
+				/*background-repeat 是否重复图片*/
+				background-repeat:repeat;/*默认状态  重复*/
+				background-repeat:repeat-x;/*在水平方向平铺*/
+				background-repeat:repeat-y;/*在垂直方向上平铺*/
+				background-repeat:no-repeat;/*不平铺*/
+
+				/*background-size  改变背景图片的大小*/
+				background-size:100%;/*代表水平和垂直方向*/
+				background-size:50% 100%;/*水平方向  垂直方向*/
+				background-size:200px 400px;/*水平方向  垂直方向*/
+				background-size:auto;/*原始图片的大小*/
+			}
+			
+		</style>
+	</head>
+<body>
+	<div id="box1"></div>
+	<div class="box2"></div>
+</body>
+</html>
