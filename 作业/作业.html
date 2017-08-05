@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+
+		.warp{
+			height:650px;
+			width: 200px;
+			background:pink;  
+			margin:20px auto;
+		}
+		.title{
+			height: 36px;
+			width:100%;
+			background-color:#d41010; 
+			color:#fff; 
+			text-align: center;
+			line-height:36px; 
+		}
+		.content{
+			padding:0 10px;
+			background-clip:content-box; 
+			height:570px;
+			width:180px;
+		}	
+		.content .detail{
+			padding:5px 10px;
+			border-bottom:1px dotted #000; 
+			height:130px; 
+		}
+		.content .detail.last{
+			height:80px; 
+		}
+		.content .detail .top{
+			height: 24px;
+			line-height: 24px;
+			font-weight:bold;
+			padding-top: 5px;
+		}
+		.content .detail .top img{
+			display: inline-block;
+			vertical-align: bottom;
+		}
+		.content .detail .list a{
+			color:#000; 
+			font-size: 12px;
+			display:inline-block; 
+		}
+		.content .detail .list li{
+			padding:10px 5px 0px 0;
+			float: left;
+		}
+		.content .detail .list li:hover a{
+			color:red;
+			text-decoration:underline;
+		}	
+		.red{
+			color: red  !important;
+		}
+
+
+
+	</style>
+	<!-- 注意点
+		重要的还是布局
+	-->
+</head>
+<body>
+
+	<div class="warp">
+		<!--标题部分-->
+		<div class="title">全部产品</div>
+		<!-- /标题部分-->
+
+		<!--内容部分-->
+		<div class="content">
+			<ul >
+				<li class="detail">
+					<!--头部-->
+				    <div class="top">
+				    	<img src="images/demo2/face.png" alt="">	
+				    	<span>产品系列</span>			    	
+				    </div>		
+				    <!-- 列表-->
+					<ul class="list">
+			    		<li><a href="#" class="red">豆乳补水</a></li>
+			    		<li><a href="#">大米修复</a></li>
+			    		<li><a href="#">樱花退黄</a></li>
+			    		<li><a href="#">小囊清闲</a></li>
+			    		<li><a href="#" class="red">苹果籽-孕纹护理</a></li>
+			    		<li><a href="#">洋甘菊-舒缓修复</a></li>
+			    		<li><a href="#">其他单品</a></li>				    		
+			    	</ul>
+				</li>
+
+				<li class="detail">
+					<!--头部-->
+				    <div class="top">
+				    	<img src="images/demo2/body(1).png" alt="">	
+				    	<span>产品特效</span>			    	
+				    </div>		
+				    <!-- 列表-->
+					<ul class="list">
+			    		<li><a href="#" class="red">保湿补水</a></li>
+			    		<li><a href="#">美白亮肤</a></li>
+			    		<li><a href="#">控油</a></li>
+			    		<li><a href="#">紧致抗皱</a></li>
+			    		<li><a href="#" class="red">妊娠纹-防护</a></li>
+			    		<li><a href="#">舒缓敏感</a></li>
+			    		<li><a href="#">眼部护理</a></li>	
+			    		<li><a href="#">护唇</a></li>				    		
+			    	</ul>
+				</li>
+
+				<li class="detail">
+					<!--头部-->
+				    <div class="top">
+				    	<img src="images/demo2/wen.png" alt="">	
+				    	<span>面部护理步骤</span>			    	
+				    </div>		
+				    <!-- 列表-->
+					<ul class="list">
+			    		<li><a href="#" >洁面</a></li>
+			    		<li><a href="#">水</a></li>
+			    		<li><a href="#">眼霜</a></li>
+			    		<li><a href="#">精华液</a></li>
+			    		<li><a href="#" >乳液</a></li>
+			    		<li><a href="#">面霜</a></li>
+			    		<li><a href="#">隔离</a></li>	
+			    		<li><a href="#">BB霜</a></li>	
+			    		<li><a href="#" class="red">CC霜</a></li>	
+			    		<li><a href="#">面膜</a></li>	
+			    		<li><a href="#">唇膏</a></li>	
+			    		<li><a href="#">卸妆油</a></li>					    		
+			    	</ul>
+				</li>
+
+				<li class="detail last">
+					<!--头部-->
+				    <div class="top">
+				    	<img src="images/demo2/pro.png" alt="">	
+				    	<span>身体护理步骤</span>			    	
+				    </div>		
+				    <!-- 列表-->
+					<ul class="list">
+			    		<li><a href="#" class="red">洗发护发</a></li>
+			    		<li><a href="#">身体洗护</a></li>
+			    		<li><a href="#">运纹护理</a></li>			    			    		
+			    	</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- /内容部分-->
+	</div>
+
+</body>
+</html>
