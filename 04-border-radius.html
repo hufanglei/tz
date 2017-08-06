@@ -1,0 +1,91 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>04-border-radius-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+			ol,ul,li{
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			a{text-decoration:none;}
+			img{border:none;}
+
+			.box1{
+				width:150px;
+				height:150px;
+				background:red;
+				margin:10px auto;
+				/*
+					4
+					左上 右上 右下 左下
+				*/
+				border-radius:10px 5px 3px 15px;
+			}
+			.box2{
+				width:150px;
+				height:150px;
+				background:gold;
+				margin:10px auto;
+				/*
+					3
+					左上  右上左下 右下
+				*/
+				border-radius:15px 60px 5px;
+			}
+			.box3{
+				width:150px;
+				height:150px;
+				background:#f6f;
+				margin:10px auto;
+				/*
+					2
+					左上右下  右上左下 
+				*/
+				border-radius:5px 40px;
+			}
+			.box4{
+				width:150px;
+				height:150px;
+				background:#96f;
+				margin:10px auto;
+				/*
+					1
+					四个角
+
+				*/
+				border-radius:50px;
+			}
+			.box5{
+				width:150px;
+				height:150px;
+				background:#ff0066;
+				margin:10px auto;
+				border-radius:50%;
+			}
+			.box6{
+				width:150px;
+				height:100px;
+				background:#ff0066;
+				margin:10px auto;
+				border-radius:50%;
+			}
+		</style>
+	</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+	<div class="box6"></div>
+
+</body>
+</html>

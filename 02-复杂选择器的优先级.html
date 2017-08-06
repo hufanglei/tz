@@ -1,0 +1,90 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>02-复杂选择器的优先级-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+			ol,ul,li{
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			a{text-decoration:none;}
+			img{border:none;}
+
+			
+			#box1 #txt1 .con{
+				color:pink;
+				font-size:12px;
+			}
+			#box1 .btn .con{
+				color:red;
+				font-size:30px;
+			}
+
+
+			#box2 #box2-1 .btn2 .con .bb{
+				color:yellow;
+				font-size:50px;
+			}
+			#box2 #box2-1 #txt2 .con{
+				color:red;
+				font-size:30px;
+			}
+
+
+
+			#box2 .box2_1 p span{
+				color:red;
+				font-size:30px;
+			}
+			#box2  .box2_1 p span b{
+				color:skyblue;
+				font-size:50px;
+			}
+			
+			#wrap ul .ul-li{
+				color:red;
+				font-size:30px;
+			}
+			.wrap ul #ul_li{
+				color:green;
+				font-size:50px;
+			}
+			
+		</style>
+	</head>
+<body>
+	<div id="box1">
+		<p id="txt1" class="btn">
+			<span class="con">复杂选择器优先级第二条</span>
+		</p>
+	</div>
+
+	<div id="box2">
+		<div id="box2-1" class="box2_1">
+			<p id="txt2" class="btn2">
+				<span class="con">
+					<b class="bb">复杂选择器优先级第二条</b>
+					<b class="bb1">复杂选择器优先级第二条</b>
+					<b class="bb2">复杂选择器优先级第二条</b>
+					<a href="#">我是辅助</a>
+				</span>
+			</p>
+		</div>
+	</div>
+
+	<div id="wrap" class="wrap">
+		<ul>
+			<li>玉米</li>
+			<li id="ul_li" class="ul-li">栗子</li>
+		</ul>
+	</div>
+</body>
+</html>

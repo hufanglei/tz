@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Z</title>
+	<style>
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+		body{
+			background:#000;
+		}
+		.box{
+			height: 300px;
+			width: 300px;
+			background:url("images/3.jpg") no-repeat 0 0;
+			border-radius:50%; 
+			margin:20px auto; 
+		}
+		.box2{
+			height: 190px;
+			width:300; 
+			background:rgba(0,0,0,0.5);
+			padding-top: 110px;			
+			display:none;
+			border-radius:50%; 			
+		}
+		.box2 a{
+			color:#fff; 
+			font-size: bold;
+			font-size:16px; 
+		}
+		.box:hover .box2{
+			display:block;
+			cursor: pointer;
+		}
+		.box3,.box4{
+			height:40px;
+			text-align: center;
+			line-height: 40px;
+		}		
+	</style>
+</head>
+    <!-- 练习心得体会
+		
+		主要注意: 两行文字如何在中间显示，这个地方是用了 padding-top处理的
+
+    -->
+<body>
+	<div class="box">
+		<div class="box2">
+				<div class="box3">
+					<a href="">新品使用</a>			 
+				</div>
+				<div class="box4">
+					<a href="">IPSA明星王牌套餐</a>	
+				</div>
+		</div>
+	</div>
+</body>
+</html>

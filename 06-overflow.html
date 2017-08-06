@@ -1,0 +1,119 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>06-overflow-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+			ol,ul,li{
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			a{text-decoration:none;}
+			img{border:none;}
+			div{
+				float:left;
+				margin-left:10px;
+			}
+			.box1{
+				width:150px;
+				height:150px;
+				background:red;
+			}
+			.box2{
+				width:150px;
+				height:150px;
+				background:#9900ff;
+				/*
+					默认值
+				*/
+				overflow:visible;
+			}
+			.box3{
+				width:150px;
+				height:150px;
+				background:#ffcc99;
+				overflow:hidden;
+			}
+			.box4{
+				width:150px;
+				height:150px;
+				background:#ccffff;
+				/*
+					不管内容是否超出指定区域,
+					水平方向和垂直方向都出现滚动机制
+				*/
+				overflow:scroll;
+			}
+			.box5{
+				width:150px;
+				height:150px;
+				background:#ccffff;
+				overflow:auto;
+			}
+			.box6{
+				width:150px;
+				height:150px;
+				background:#ccffff;
+				/*
+					指定水平方向有滚动机制
+				*/
+				overflow-x:hidden;
+
+			}
+			.box6 .box6-1{
+				width:300px;
+				height:50px;
+				background:red;
+			}
+			.box7{
+				width:150px;
+				height:150px;
+				background:#ccffff;
+				/*
+					指定垂直方向有滚动机制
+				*/
+				overflow-y:hidden;
+				
+			}
+			.box7 .box7-1{
+				width:100px;
+				height:300px;
+				background:red;
+			}
+		</style>
+	</head>
+<body>
+	<div class="box1">
+		也就是说，要充分发挥“湘女多情”的强项，将“秀丽”提升到“魅丽”境界。在电视高度普及的今天，屏幕上几位湘籍女歌手的媚眼与甜歌着实令不少外省的男歌迷们心旌摇曳，还真将“湘女多情”当作一条放之四海而皆准的真理来认同。
+	</div>
+	<div class="box2">
+		22也就是说，要充分发挥“湘女多情”的强项，将“秀丽”提升到“魅丽”境界。在电视高度普及的今天，屏幕上几位湘籍女歌手的媚眼与甜歌着实令不少外省的男歌迷们心旌摇曳，还真将“湘女多情”当作一条放之四海而皆准的真理来认同。
+	</div>
+	<div class="box3">
+		33也就是说，要充分发挥“湘女多情”的强项，将“秀丽”提升到“魅丽”境界。在电视高度普及的今天，屏幕上几位湘籍女歌手的媚眼与甜歌着实令不少外省的男歌迷们心旌摇曳，还真将“湘女多情”当作一条放之四海而皆准的真理来认同。
+	</div>
+	<div class="box4">
+		44也就是说，要充分发挥“湘女多情”的强项，将“秀丽”提升到“魅丽”境界。
+	</div>
+	<div class="box5">
+		55也就是说，要充分发挥“湘女多情”的强项，将“秀丽”提升到“魅丽”境界。在电视高度普及的今天，屏幕上几位湘籍女歌手的媚眼与甜歌着实令不少外省的男歌迷们心旌摇曳，还真将“湘女多情”当作一条放之四海而皆准的真理来认同。
+	</div>
+	<div class="box6">
+		<div class="box6-1">
+			66-x也就是说，要充分发挥“湘女多情”的强项，将“秀丽”提升到“魅丽”境界。
+		</div>
+	</div>
+	<div class="box7">
+		<div class="box7-1">
+			77-y也就是说，要充分发挥“湘女多情”的强项，将“秀丽”提升到“魅丽”境界。
+		</div>
+	</div>
+</body>
+</html>
