@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+	ol,ul,li{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	a{text-decoration:none;}
+	img{border:none;}
+
+	.header{
+		height:75px;
+		background: url("images/demo2/topbg.jpg") repeat-x; 
+	}
+	.container{
+		width:80%;
+		height:100%; 
+		margin:0 auto;  		
+	}
+	.main{
+		height:75px; 
+		margin:0 10px; 
+	}
+	.main .logo{
+		padding-top:10px; 
+		float:left; 
+	}
+	.main .nav{
+		float:right; 
+	}
+	.main .nav li{
+		float:left; 
+		margin-left: 14px;		
+	} 
+	.main .nav li a{
+		display: inline-block;
+		text-align: center;
+		width:102px; 
+		height: 33px;
+		color:#fff; 
+		margin-top: 20px;
+		line-height:33px; 	
+	}
+	.main .nav li.home a{
+		background:url("images/demo2/btn2.png") no-repeat 0 0; 
+	}
+	.main .nav li:hover a{
+		background:url("images/demo2/btn2.png") no-repeat 0 0; 
+	} 
+	.main .nav li.last{
+		padding-right:0; 
+	}
+
+	</style>
+</head> 
+ 	<!-- 步骤 
+		1.给header个背景，根据图 使用了repeat-x
+		2.根据效果，分为logo和导航ul 分别为左右浮动
+		3.logo直接给个 a>img 左浮动，然后margin-top
+		4. 列表再给左浮动， ul>li> 根据文字内容撑起来，除了最有一个元素，其他用padding-right调试
+		5.文字位置可以的话，给a个背景，根据图像设置宽度，然后让a变成inline-block，给amargin-top。调整nav上下位置
+		   给text-align= center居中文字
+		6.根据li的位置，微调，给li个margin-left即可
+		
+		关键点 : 根据背景色 辅助 ，调整布局。背景图的居中（text-align）   
+		a>img
+		ul>li>a>span 这2中经常搭配的布局方式
+
+ 	-->
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="main">
+				<a href="" class="logo">
+					<img src="images/demo2/weixin.png" alt="">
+				</a>
+				<ul class="nav">
+					<li class="home"><a href="#"><span>首页</span></a></li>
+					<li><a href="#"><span>帮助</span></a></li>
+					<li><a href="#"><span>公众</span></a></li>
+					<li><a href="#"><span>微信</span></a></li>
+					<li><a href="#"><span>支付</span></a></li>
+					<li><a href="#"><span>网页版</span></a></li>
+					<li><a href="#"><span>表情</span></a></li>
+					<li class="last"><a href="#"><span>广告</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

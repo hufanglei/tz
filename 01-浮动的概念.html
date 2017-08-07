@@ -1,0 +1,43 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>01-浮动的概念-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+			ol,ul,li{
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			a{text-decoration:none;}
+			img{border:none;}
+			
+			.box{
+				width:100px;
+				height:100px;
+				background:red;
+			}
+		</style>
+	</head>
+<body>
+	<div class="box">1</div>
+	<div class="box">2</div>
+	<div class="box">3</div>
+	<div class="box">4</div>
+	<span>行级元素</span>
+	<span>行级元素</span>
+	<span>行级元素</span>
+	<span>行级元素</span>
+	<span>行级元素</span>
+	<p>浮动的定义：使元素脱离文档流，按照指定方向（左右）发生移动，遇到父边界或者相邻的浮动元素停了下来。</p>
+	<p>文档流：是文档中可显示对象在排列时所占用的位置/空间(在页面中占位置)。</p>
+	<p>脱离文档流：在页面中不占位置, CSS 中，通过 float 属性实现元素的浮动。</p>
+	<p>任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素。</p>
+</body>
+</html>
