@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	*{margin:0;padding:0;}
+	body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+	ol,ul,li{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	a{text-decoration:none;}
+	img{border:none;}
+
+	.fl{
+		float:left; 
+	}
+	.fr{
+		float:right; 
+	}
+	.head{
+		margin:20px 0; 
+		height: 90px;
+		width: 100%;
+		background:#fff;
+	}
+	.head .line{
+		height:49px;
+		width:450px; 		
+		border-bottom: 1px solid #aaa;
+	}
+	.head .img{
+		height: 90px;
+		width:300px;
+		position:absolute;
+		left:50%;
+		margin-left:-150px;  
+		background:url("images/1.jpg") no-repeat -42px -520px;
+	}	
+	.container{
+		width:1000px;
+		height:500px;
+		background:#aaa;  
+		margin:0 auto; 
+		position:relative;
+	}
+	.container .spa{
+		height: 75px;
+		width:50px;
+		background:rgba(0,0,0,0.5);
+		position:absolute; 
+		top:217px;
+	}
+
+	.container .spa.left{
+		left:0; 	
+	}
+	.container .spa a{
+		height:75px; 
+		display:block; 
+	}
+	.container .spa.left a{		
+		background:url("images/2.png") no-repeat -2px -78px;
+	}
+	.container .spa.right a{
+		background:url("images/2.png") no-repeat  -4px -148px;	
+	}
+	.container .spa.right{
+		right:0;
+	}
+	.container .spa.left:hover,.container .spa.right:hover{
+		cursor:pointer;
+	}
+	.container .box{
+		width:890px;
+		height:150px;
+		background: red;  
+		position:absolute; 
+		left:55px;
+		top:425px; 
+	}
+	.container  .box .box1{
+		background: rgba(0,0,0,0.5);
+	    width: 246px;
+	    height: 110px;
+	    padding-top: 40px;
+	    padding-left: 60px;
+	    padding-right: 44px;
+	    color: #fff;
+	    font-size: 18px;
+	    line-height: 30px;
+	}
+    .container  .box .box2{
+		background: rgba(0,0,0,0.5);
+   		width: 540px;
+    	height: 120px;
+    	padding: 30px 0 0 0px;
+    }
+    .container  .box .box2 .info{
+    	display: inline-block;
+	    width: 490px;
+	    height: 65px;
+	    padding: 15px 0 0 20px;
+	    color: #fff;
+	    font-size: 14px;
+	    border-left: 1px solid #ccc;
+    }
+    .other{
+    	margin-top: 200px;
+    	height: 10px;
+    	width: 100%;
+    }
+	</style>
+</head>
+
+<!-- 注意点 
+	1. 头部的布局
+	   中间定位  两边浮动
+	2. 最下面的文字部分 左右f浮动，然后调试	
+		
+-->
+
+<body>
+	<div class="head">	
+		<span class="line fl"></span>
+		<div class="img"></div>
+		<span class="line fr"></span>
+	</div>
+	<div class="container">
+		<ul>
+			<li>
+				<a href=""><img src="images/3.jpg" alt=""></a>					
+			</li>
+		</ul>
+		<span class="spa left"><a href=""></a></span>
+		<span class="spa right"><a href=""></a>	</span>
+		<div class="box">				
+			<span class="box1 fl">5分钟就能搞定的时髦派对妆 秒杀大红唇和烟熏妆</span>
+			<span class="box2 fl">
+				<span class="info">红唇与烟熏妆曾是派对妆的“标配”，这个过时的规则早就该打破了。今年秋冬的彩妆流行是简洁时髦的美感：一抹亮片眼影，一个出其不意的眼线，一只镇住全场的唇膏。既然能花5分钟就搞定的派对妆，为什么要花一个小时呢？</span>	
+			</span>		
+		</div>
+
+		<div class="other"></div>
+	</div>
+</body>
+</html>
+

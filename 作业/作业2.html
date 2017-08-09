@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float:right; 
+		}
+		.hot{
+			width:250px; 
+			height:192px;
+			border:4px solid #ccc; 	
+			position:fixed;
+			top:50px;
+			left:100px;  		 
+		}
+		.head{
+			height:40px; 
+			padding:0 16px; 
+			position: relative;
+		}
+		.head .line{
+			width: 60px;
+			height:19px;			
+			border-bottom: 1px solid #ccc; 
+		}
+		.head .title{
+			position: absolute;
+			left:50%;
+			margin-left:-35px;  
+			height:40px;
+			width: 70px;
+			line-height: 40px;
+			text-align: center; 
+			font-weight: bold;
+		}
+		.hot .content li{
+			text-align: center;
+		}
+		.hot .content li a{
+			color:#000;
+			font-size:12px; 
+		}
+		.hot .content li:hover{
+			text-indent:1em; 
+		}
+		.hot .content li:hover a{
+			color:red;
+		}
+		
+
+	</style>
+	
+	<!-- 注意点 
+	head部分可以不给宽度，让其自适应，给100%也不可以
+	-->
+
+</head>
+<body>
+	<div class="hot">
+		 <div class="head">
+			<span class="fl line"></span>
+			<span class="title">一周热搜</span>
+			<span class="fr line"></span>
+		 </div>
+		 <div class="content">
+			<ul>
+				<li><a href="">好先生火了江疏影的大红唇</a></li>
+				<li><a href="">谭松韵到底偷吃了多少防腐剂</a></li>
+				<li><a href="">蕾莉泰妍炫耀争做好色女 这样的</a></li>
+				<li><a href="">泫雅无惧4Minute解散魔咒全靠猫</a></li>
+				<li><a href="">模特身材爱豆脸！李圣经时髦起来</a></li>
+				<li><a href="">《又见吴海英》徐贤真撞脸泰妍</a></li>
+				<li><a href="">明星跻身网红圈 贾静雯光晓彤-</a></li>
+			</ul>
+		 </div>
+	</div>
+</body>
+</html>
