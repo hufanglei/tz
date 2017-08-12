@@ -1,0 +1,122 @@
+<!doctype html><!--申明当前文档的类型是html-->
+<html><!--页面的开始位置-->
+	<head>
+		<!--申明当前页面的编码集 中文编码(gbk gb2312) 国际编码 utf-8-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+		<meta name="Author" content="凌薇" />
+		<meta name="Keywords" content="关键字,关键词" />
+		<meta name="Description" content="描述和简介" />
+		<title>01-表单元素-凌薇战队</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+			ol,ul,li{
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			a{text-decoration:none;}
+			img{border:none;}
+			body{
+				height:2000px;
+			}
+			.txt1{
+				resize:none;
+			}
+			
+		</style>
+	</head>
+<body>
+	<!--
+		大总管: form(元素(一个区域))
+		小喽啰: input (元素)
+		区分小喽啰的身份: type(类型)
+		value 和 name 的区别:
+			不是同一个东西,
+			name 名字 区分每一个表单元素
+				input yhm-----》凌薇
+				input mm------》123123
+				input xingbioe------》nv
+
+				input -----》凌薇
+				input ------》123123
+				input ------》nv
+			
+			value 计算机看的值
+
+			action 提交到哪里去
+			method 提交方式
+					get  明文提交
+						1: 不安全(加密也没用)
+						2: 长度限制
+
+					post 非明文提交
+						1: 安全
+						2: 没有长度限制
+
+
+	-->
+	<form action="#" method="post">
+		用户名: <input type="text" id="" class="" name="yhm" placeholder="用户名/手机号/邮箱" /><br /><br />
+		验证码: <input type="text" name="yzm" placeholder="请输入密码" /><br /><br />
+		密码: <input type="password" name="mm" placeholder="请输入密码" /><br /><br />
+
+		个人简介: 
+			<textarea name="txt" cols="30" rows="15" class="txt1"></textarea><br /><br />
+
+		性别: 
+			<input type="radio" name="xingbie" value="nan" checked="checked" id="man" /> <label for="man">男</label>
+			<input type="radio" name="xingbie" value="nv" id="woman" /> <label for="woman">女</label>
+			<input type="radio" name="xingbie" value="buxiang" id="bx" /> <label for="bx">不详 </label><br /><br />
+
+		
+		兴趣爱好:
+			<input type="checkbox" name="ppq" value="ppq" id="pp" /><label for="pp">乒乓球</label>
+			<input type="checkbox" name="xq" value="xq" id="xq" /><label for="xq">下棋</label>
+			<input type="checkbox" name="yy" value="yy" id="yy" /><label for="yy">游泳</label><br /><br />
+
+
+		请选择地址:
+			<select name="date1" disabled>
+				<option name="0" value="0">--请选择--</option>
+				<option name="1" value="1">果果</option>
+				<option name="2" value="2">村儿里</option>
+				<option name="3" value="3">波波</option>
+				<option name="4" value="4">兔斯基</option>
+				<option name="5" value="5">蛋蛋</option>
+				<option name="6" value="6">骑行侠</option>
+				<option name="7" value="7">老司机</option>				
+			</select>
+			<select name="date2" multiple size="4">
+				<option name="0" value="0">--请选择--</option>
+				<option name="1" value="1">湖南</option>
+				<option name="2" value="2">湖北</option>
+				<option name="3" value="3">河南</option>
+				<option name="4" value="4">河北</option>
+				<option name="5" value="5">福建</option>
+				<option name="6" value="6">山西</option>
+				<option name="7" value="7">山东</option>				
+			</select><br /><br />
+
+			隐藏输入框: <input type="hidden" name="" /><br /><br />
+
+			文件域: <input type="file" name="file1" /><br /><br />
+
+			星座测试: 
+				<fieldset><!--定义域 用来组合表单元素-->
+					<legend>桃花运</legend><!--定义域标题--><br />
+					<input type="checkbox" name="tpz" id="tp" /><label for="tp">天平座</label>
+					<input type="checkbox" name="txz" id="tx" /><label for="tx">天蝎座</label><br /><br />
+					<input type="checkbox" name="jxz" id="jx" /><label for="jx">巨蟹座</label>
+					<input type="checkbox" name="ssz" id="ss" /><label for="ss">射手座</label>
+				</fieldset>
+
+				<h3>按钮</h3>
+				普通按钮: <input type="button" value="登 录" class="" /><br /><br />
+				特殊按钮: <input type="submit" value="注 册" /><br /><br />
+				一键清空: <input type="reset" value="一键清空" />
+	</form>
+
+</body>
+</html>
+
