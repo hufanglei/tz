@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业2-3加入tab</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+		.wrap{
+			width:1008px;
+			height:300px;
+			margin:10px auto;
+		}
+		.fl{
+			float: left;
+		}
+		.nav{
+			width:1008px; 
+			height:32px;
+			font-size: 14px; 
+		}
+		.nav .btn{
+			width:937px; 
+			border:1px solid #ccc; 
+			border-radius: 0.2rem;
+			line-height: 34px;
+			height: 34px; 
+			text-align:center;
+			float:left; 
+			text-align: left;
+		}
+		.common{
+			width:68px;
+			text-align: center;
+			display:inline-block; 
+		}
+		.nav .tic{
+			border-top:4px solid green;
+			border-left: 1px solid #ccc;	
+			height:30px; 
+			border-radius: 0.2rem;
+			line-height: 30px;	
+		}
+		.ul{
+			width:1008px;
+			height:130px; 
+			text-align: center; 
+			margin:50px auto;
+			position:relative; 
+		}
+		.li{
+			width: 200px;
+			height:130px;
+			position:relative; 
+			float: left;
+			margin-left:2px; 
+		}	
+		.li .hoverbox{
+			position:absolute; 
+			top:-1px;
+			left:-1px;
+			right:-1px;
+			bottom: -1px;
+			border:1px solid #000; 
+			display:none;   
+		}
+		.li:hover .hoverbox{
+			display:block; 
+		}
+		.li img{
+			width: 200px;
+			height:130px;
+		}
+		.li .shadow{
+			position:absolute; 
+			bottom:0;
+			height:30px;
+			width:200px; 
+			background:rgba(0,0,0,0.5);   
+			text-align: center;
+			line-height:30px;
+			color:#fff;  
+			font-size:14px; 
+		}
+		.li.first{
+			margin-left:0;
+		}	
+		.ul .spa{
+			width:29px;
+			height: 43px;
+			position:absolute; 
+			top:44px; 
+			background-image:url("images/demo1/6.png");
+			background-repeat:no-repeat; 
+		}
+		.ul .spa.left{
+			left:0;	
+			background-position:0 0; 	
+		}
+		.ul .spa.left:hover{
+			background-position:0 -43px; 
+		}
+		.ul .spa.right{
+			right:0;	
+			background-position:-29px 0px; 		
+		}
+		.ul .spa.right:hover{
+			right:0;	
+			background-position:-29px -43px; 		
+		}			
+
+	</style>
+</head>
+<body>
+<style>
+
+</style>
+	<div class="wrap">
+		<div class="nav">
+			<ul>
+				<li class="fl tic "><span class="common">谭周热点</span></li>
+				<li class="fl btn">
+					<span class="common">今日推荐</span>
+				</li>
+			</ul>
+		</div>
+
+		<ul class="ul">
+		<li class="li first">
+			<img src="images/demo1/1.png" alt="">
+			<div class="shadow">谭州建筑装饰设计学院</div>
+			<div class="hoverbox"></div>
+		</li>
+		<li class="li">
+			<img src="images/demo1/2.png" alt="">
+			<div class="shadow">谭州2016设计大赛</div>
+			<div class="hoverbox"></div>
+		</li>
+		<li class="li">
+			<img src="images/demo1/3.png" alt="">
+			<div class="shadow">谭州游戏设计风暴</div>
+			<div class="hoverbox"></div>
+		</li>
+		<li class="li">
+			<img src="images/demo1/4.png" alt="">
+			<div class="shadow">谁是谭州最帅老师</div>
+			<div class="hoverbox"></div>
+		</li>
+		<li class="li">
+			<img src="images/demo1/5.png" alt="">
+			<div class="shadow">职场人高薪就值之道</div>
+			<div class="hoverbox"></div>
+		</li>
+		<span class="left spa"></span>
+		<span class="right spa"></span>
+	</ul>
+	</div>
+
+
+	
+	
+</body>
+</html>

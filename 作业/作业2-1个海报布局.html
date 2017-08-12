@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业2-1个小海报的样式</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+
+		.li{
+			width: 200px;
+			height:130px;
+			margin: 10px auto;
+			position:relative; 
+		}	
+		.li .hoverbox{
+			position:absolute; 
+			top:-1px;
+			left:-1px;
+			right:-1px;
+			bottom: -1px;
+			border:1px solid red; 
+			display:none;   
+		}
+		.li:hover .hoverbox{
+			display:block; 
+		}
+		.li img{
+			width: 200px;
+			height:130px;
+		}
+		.li .shadow{
+			position:absolute; 
+			bottom:0;
+			height:30px;
+			width:200px; 
+			background:rgba(0,0,0,0.5);   
+			text-align: center;
+			line-height:30px;
+			color:#fff;  
+			font-size:14px; 
+		}		
+	</style>
+</head>
+<body>
+	<div class="li">
+		<img src="images/demo1/1.png" alt="">
+		<div class="shadow">谭州建筑装饰设计学院</div>
+		<div class="hoverbox"></div>
+	</div>
+</body>
+</html>

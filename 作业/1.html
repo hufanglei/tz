@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+		
+		.contain{
+			margin: 50px auto;
+			padding:20px 30px; 
+		}
+		.item{
+			padding:20px 0; 
+			border-top:1px solid #ddd; 
+		}
+		.item:hover{
+			background:#eee;
+			cursor: pointer; 
+		}
+		.item:hover .box{
+			background:#eee;
+		}
+		.item.last{
+			border-bottom:1px solid red; 
+		}
+		
+		.item img{
+			width: 200px;
+			height:130px; 
+			vertical-align:top;
+		}
+		.item .box{
+			display:inline-block;
+			height:130px; 
+			background:#fff; 
+			vertical-align:top;
+			margin-left:1rem; 
+		}
+		.box p{
+			font-size:20px; 			
+		}
+		.box .right{
+			line-height: 45px;
+		}
+		.box dl dt,.box dl dd{
+			float:left; 
+		}
+		.box dl dt{
+			color:gold; 
+			margin: 10px 0 10px 0;    
+			padding:0.2rem 0.2rem 0.2rem 0; 
+		}
+		.box dl dd{
+			background:#bbb; 
+			margin:0 0.5rem; 
+			border-radius:0.2rem; 
+			margin-top: 12px;
+			font-size: 14px;
+			padding:0.2rem; 
+		}
+		.box dl{
+			height:50px;  
+		}
+		.box dl:after{
+			content:"";
+			clear:both; 	
+		}
+		.tip{
+			border: 1px solid #ccc;
+    		border-radius: 18px;
+   			padding: 0.2rem;
+   			margin-right:3rem; 
+
+		}
+		.bott{
+			padding-top:5px;
+		}
+
+	</style>
+</head>
+
+<!-- 注意点 
+
+	图像和右侧对象对其，采用vertical-align:top
+-->
+<body>
+	<ul class="contain">
+		<li class="item">			
+			<img src="images/demo4/4.jpg" alt="">
+			<div class="box">
+				<p class="right">不只有看肤色挑唇色 选对口红衣服更美</p>
+				<dl >
+					<dt>标签: </dt>
+					<dd>唇膏</dd>
+					<dd>衣服</dd>
+					<dd>粉色</dd>
+					<dd>化妆</dd>
+					<dd>美容美体</dd>
+				</dl>
+				<div class="bott"><span class="tip">悦己self</span><span>2016-10-18</span></div>
+				<!-- <div class="">不只有看肤色挑唇色 选对口红衣服更美</div> -->
+			</div>
+		</li>
+		<li class="item">			
+			<img src="images/demo4/5.jpg" alt="">
+			<div class="box">
+				<p class="right">学画红唇妆，让你的女王范分分钟秒杀路人</p>
+				<dl >
+					<dt>标签: </dt>
+					<dd>唇膏</dd>
+					<dd>衣服</dd>
+					<dd>粉色</dd>
+					<dd>化妆</dd>
+					<dd>美容美体</dd>
+				</dl>
+				<div class="bott"><span class="tip">毛戈平形象艺术学校</span><span>2016-10-18</span></div>
+			</div>
+		</li>
+		<li class="item">			
+			<img src="images/demo4/6.jpg" alt="">
+			<div class="box">
+				<p class="right">无数次给国外博士跪了 把自己的脸画成漫画人物好逼真</p>
+				<dl >
+					<dt>标签: </dt>
+					<dd>唇妆</dd>
+					<dd>红唇</dd>
+					<dd>眼影</dd>
+					<dd>化妆</dd>
+					<dd>美容美体</dd>
+				</dl>
+				<div class="bott"><span class="tip">八公奔</span><span>2016-10-18</span></div>
+			</div>
+		</li>
+		
+	</ul>
+</body>
+</html>
