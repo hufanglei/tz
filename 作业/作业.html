@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+		ol,ul,li{
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		a{text-decoration:none;}
+		img{border:none;}
+		.box1{
+			margin: 50px;
+			width:500px; 
+			height: 500px;
+			border:1px solid red; 
+		}
+		.box1 .item{
+			text-align:center; 
+			height:50px; 
+			line-height:50px;
+		}
+		.item .spa{
+			width:10%;
+			display:inline-block; 
+			text-align:right; 
+		}
+		.box1 .item input{
+			outline:none;
+			height:30px; 
+			display:inline-block; 
+			width:85%;
+			border:1px solid #ccc; 
+			border-radius:2px;  
+			text-indent:0.5rem; 
+		}
+		.box1 .bottom{
+			margin-top:20px;
+			text-align: center;
+		}
+		.box1 .bottom input{
+			height:30px; 
+			display:inline-block; 
+			padding:0.2rem 0.5rem; 
+			outline:none;
+			border:1px solid #ccc; 
+			border-radius:0.2rem;
+			
+		}
+
+
+		
+	</style>
+</head>
+<body>
+	<div class="box1">
+			<p class="item">
+			<span class="spa">姓名</span>	
+			<input type="text">
+			</p>
+			<p class="item">
+			<span class="spa">密码</span>	
+			<input type="password">
+			</p>
+			<p class="item">
+			<span class="spa">邮箱</span>	
+			<input type="text">
+			</p>
+			<p class="bottom">
+				<input type="button" value="提 交">
+				<input type="button" value="重置">
+			</p>
+	</div>
+</body>
+</html>
