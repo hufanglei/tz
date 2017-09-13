@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding:0;}
+	body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+	ol,ul,li{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	a{text-decoration:none;}
+	img{border:none;}
+	.clearfixed:after{
+		content: "";
+		display:block;
+		clear:both;  
+	}
+	p{
+		padding:5px 0;
+	}
+	.wrap{
+		width:880px; 
+		height:510px; 
+		margin:50px auto; 
+	}
+	.wrap li{
+		border-top:1px solid red; 
+		padding:20px 0; 
+	}
+	.wrap li:hover {
+		background: #fce6dc;
+    }
+	.wrap li .image-box{
+		width:200px;
+		background:red; 
+		float:left; 
+		margin-right:20px; 		
+	}
+	.wrap li .image-box img{
+		width:100%; 
+		vertical-align:middle;
+	}
+	.wrap li .txt-box{		
+		width:600px;
+		height:130px;
+		/* background: pink; */
+		float:left;
+	}
+	.wrap .txt-box .tit{
+		font-size:20px;
+		margin-bottom:20px;  
+	}
+	.wrap .txt-box .tagMenu{
+		color: #b19214;
+		margin-bottom:20px; 
+	}
+	.wrap .txt-box .tagMenu a{	
+		background:#f7aa91;	
+	}
+	.txt-box a{
+		padding: 2px 5px;
+	    color: #ec5b42;
+	    font-size: 14px;
+	    margin-right: 5px;
+	}
+	.wrap .txt-box .info a.last{
+		border: 1px solid #ec5b42;
+    	border-radius: 10px;
+	}
+	
+	</style>
+
+</head>
+<body>
+	<ul class="wrap">
+		<li class="clearfixed">
+			<div class="image-box"><img src="images/demo4/4.jpg" alt=""></div>
+			<div class="txt-box">
+				<p class="tit">不只有看肤色挑唇色 选对口红衣服更美</p>
+				<div class="tagMenu">
+					标签
+					<a href="">唇膏</a>
+					<a href="">衣服</a>
+					<a href="">美容</a>
+					<a href="">护肤</a>
+					<a href="">化妆品</a>
+				</div> 
+				<p class="info">
+					<a href="" class="last">悦几self</a>
+					<a href="">2017-06-16</a>
+				</p>
+			</div>
+		</li>
+		<li class="clearfixed">
+			<div class="image-box"><img src="images/demo4/4.jpg" alt=""></div>
+			<div class="txt-box">
+				<p class="tit">不只有看肤色挑唇色 选对口红衣服更美</p>
+				<div class="tagMenu">
+					标签
+					<a href="">唇膏</a>
+					<a href="">衣服</a>
+					<a href="">美容</a>
+					<a href="">护肤</a>
+					<a href="">化妆品</a>
+				</div> 
+				<p class="info">
+					<a href="" class="last">悦几self</a>
+					<a href="">2017-06-16</a>
+				</p>
+			</div>
+		</li>
+		<li class="clearfixed">
+			<div class="image-box"><img src="images/demo4/4.jpg" alt=""></div>
+			<div class="txt-box">
+				<p class="tit">不只有看肤色挑唇色 选对口红衣服更美</p>
+				<div class="tagMenu">
+					标签
+					<a href="">唇膏</a>
+					<a href="">衣服</a>
+					<a href="">美容</a>
+					<a href="">护肤</a>
+					<a href="">化妆品</a>
+				</div> 
+				<p class="info">
+					<a href="" class="last">悦几self</a>
+					<a href="">2017-06-16</a>
+				</p>
+			</div>
+		</li>
+	</ul>
+</body>
+</html>
